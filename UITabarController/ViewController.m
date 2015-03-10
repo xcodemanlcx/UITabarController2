@@ -14,6 +14,15 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    self.hidesBottomBarWhenPushed = YES;
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated{
+    self.navigationController.hidesBottomBarWhenPushed = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
